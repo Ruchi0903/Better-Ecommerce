@@ -1,0 +1,42 @@
+nav{
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+nav > h2{
+    text-transform: uppercase;
+    /* color: white; */
+}
+
+nav > div{
+    display: flex;
+    align-items: center;
+}
+
+nav > div > a{
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    transition: all 0.3s;
+}
+
+nav > div > a:hover{
+    opacity: 0.5;
+}
+
+nav > div > a > p{
+    position: absolute;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font: 900 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(90%, -90%);
+}

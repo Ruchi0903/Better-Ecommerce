@@ -1,0 +1,51 @@
+.home {
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 200px;
+  margin: 2rem;
+  border-radius: 5px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.product-card > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-card > h4 {
+  margin: 1rem;
+  color: white;
+}
+
+.product-card > p {
+  color: white;
+}
+
+.product-card > button {
+  cursor: pointer;
+  background-color: orangered;
+  border: none;
+  padding: 1rem;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s;
+  font-weight: 500;
+  width: 100%;
+  &:hover {
+    background-color: orange;
+  }
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}

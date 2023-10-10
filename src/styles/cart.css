@@ -1,0 +1,84 @@
+/* @import "./mediaquery.css"; */
+
+.cart {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.cart > main {
+  padding: 2rem;
+  overflow-y: auto;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+.cart > aside {
+  border-radius: 100px 0 0 100px;
+  background-color: rgba(130, 116, 116, 0.399);
+  color: white;
+  height: 100%;
+  width: 100%;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 1.82);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cart > aside > h2 {
+  margin: 1rem;
+  letter-spacing: 2px;
+}
+
+.cart > aside > h2:last-of-type {
+  font-weight: 600;
+}
+
+.cart-item {
+  background-color: orange;
+  width: 100%;
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  align-items: center;
+  > img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    > button {
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        background-color: orangered;
+      }
+    }
+    > p {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  > svg {
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: auto;
+    &:hover{
+        color: orangered;
+    }
+  }
+}
