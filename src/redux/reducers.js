@@ -1,6 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
 
-
 export const cartReducer = createReducer({
     // initial "state" of the cart: everything will be empty, nothing will be there.
     cartItems: [],

@@ -49,3 +49,36 @@
 .product-card:hover {
   transform: scale(1.05);
 }
+
+/* SEARCH FUNCTIONALITY */
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search > input {
+  border-radius: 10px;
+  width: 15%;
+  height: 25px;
+  text-align: center;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.search > button {
+  cursor: pointer;
+  background-color: orangered;
+  border: none;
+  padding: 0.5rem;
+  margin-left: 15px;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s;
+  font-weight: 500;
+  &:hover {
+    background-color: orange;
+    transform: scale(1.05);
+  }
+}
